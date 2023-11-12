@@ -167,3 +167,106 @@ const result = numberEqual(12987, 1564);
 console.log(result);
 
 console.log(numberEqual(20, 40));
+
+// Flow Controllers 
+// If 
+const stud = 600;
+const stud1 = 400;
+
+if(stud > stud1){
+    if(stud > 100){
+        console.log("yes======");
+    }
+}else if(stud == stud1){
+    console.log("2===========");
+}else{
+    console.log("3===========");
+}
+
+// Switch 
+const val = "ACPT";
+switch (val) {
+    case "ACPT":
+        console.log("1-------");
+        break;
+
+        case "AFSD":
+            console.log("2----------");
+            break;
+
+    default:
+        break;
+}
+
+// For loop
+const arr = [12, 34, 87, 65];
+
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+}
+
+// While 
+let stu = 0;
+while (stu < arr.length) {
+    console.log(arr[stu],"------");
+    stu++;
+}
+// do while 
+let child = 0;
+do {
+   console.log(arr[child],"********"); 
+   child++
+}while(child < arr.length);
+
+// break 
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+    if(arr[i] == 87){break;}
+}
+
+// Object 
+const person = {
+    name: "Chamikara",
+    address: "Panadura",
+    id: "9232348433",
+    age: "29",
+    run: function(){console.log("run")},
+    eat: function(){console.log("eat")},
+    sing: function(){console.log("sing")},
+}
+
+const name1 = person.id
+console.log(name1);
+
+person.run();
+person.eat();
+person.sing();
+
+// Array 
+const arr1 = [45, "chamikara", true, person];
+console.log(arr1[3].name);
+arr1[3].run()
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// const fruit = fruits.pop();
+// console.log(fruits);
+// console.log(fruit);
+
+// fruits.push("Kiwi");
+// console.log(fruits);
+
+// const fruit = fruits.shift();
+// console.log(fruits);
+// console.log(fruit);
+
+// fruits.unshift("Kiwi");
+// console.log(fruits);
+
+
+
+// Events 
+// onClick 
+function clickMe() {
+    console.log("Click Button");
+}
