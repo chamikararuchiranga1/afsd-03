@@ -269,4 +269,43 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // onClick 
 function clickMe() {
     console.log("Click Button");
+    // document.write("Click Button")
+    // alert("Click me")
+}
+
+// onChange 
+const changeText = () => {
+    const text = document.getElementById('change-text').value
+    document.getElementById('view-text').value = ""
+    console.log(text);
+}
+
+// onMouseOver 
+const mouseOver = () => {
+    document.getElementById('mouse').style.backgroundColor = 'blue'
+    document.getElementById('mouse').style.width = '300px'
+
+}
+
+const mouseOut = () => {
+    document.getElementById('mouse').style.backgroundColor = 'red'
+    document.getElementById('mouse').style.width = '200px'
+}
+
+const keyDown = () => {
+    console.log("key Down-----");
+}
+
+const keyUp = () => {
+    console.log("key Up-----");
+}
+
+const keyPress = () => {
+    console.log("key Press-----");
+}
+
+const ChangeName = () => {
+    const text = document.getElementById('change-name').value
+    document.getElementById('display-1').innerText = text
+    // console.log(text);
 }

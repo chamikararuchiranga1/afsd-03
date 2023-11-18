@@ -9,10 +9,34 @@
 <body>
     <h1>Java Script</h1>
 
+    <!-- OnClick  -->
     <button onclick="clickMe()" type="button" class="btn btn-primary">
         Click Event
     </button>
-    
+    <br>
+    <!-- OnChange  -->
+    <div class="form-group w-50">
+        <label for="exampleInputEmail1">Email address</label>
+        <input onchange="changeText()" type="text" class="form-control" id="change-text" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="text" class="form-control" id="view-text" aria-describedby="emailHelp" placeholder="View Text">
+      </div>
+
+      <br><br>
+
+      <div id="mouse" onmouseout="mouseOut()" onmouseover="mouseOver()" style="background-color: red; width: 200px; height: 200px; ">
+
+      </div>
+
+      <br><br>
+      <input onkeypress="keyPress()" onkeyup="keyUp()" onkeydown="keyDown()" type="text" class="form-control" id="view-text" aria-describedby="emailHelp" placeholder="View Text">
+      <br><br>
+
+      <h2>My Form</h2>
+      <input onkeyup="ChangeName()" type="text" class="form-control" id="change-name" aria-describedby="emailHelp" placeholder="View Text">
+      <br>
+      <h3 id="display-1"></h3>
+
+
     <br><br>
     <hr>
 
