@@ -81,5 +81,47 @@ switch (userInput) {
     break;
 }
 
-document.getElementById('display-6').innerText = fullName
- }
+    document.getElementById('display-6').innerText = fullName
+}
+
+function arraySubmit() {
+    const userInput = document.getElementById("test-10").value;
+    const arr = []
+    for(let o=0; o<userInput.length; o++){
+        arr.push(" "+userInput[o]+" ")
+    }
+    document.getElementById('display-7').innerText = arr
+}
+
+const numArray = []
+function arrayPush() {
+    const userInput = document.getElementById("test-11").value
+    numArray.push(userInput);
+     document.getElementById("test-11").value = "";
+}
+
+function arrayPrint() {
+    document.getElementById('display-8').innerText = numArray;
+}
+
+function login() {
+    const uName = 'adMIn';
+    const uPass = '12345';
+    const userName = document.getElementById("test-12").value
+    const password = document.getElementById("test-13").value
+    let mms = ""
+    if(uName.toLowerCase() == userName.toLowerCase() && uPass.toLowerCase() == password.toLowerCase()){
+        mms = 'Login Success..!'
+    }else{
+        mms = 'Login Fail..!'
+    }
+    document.getElementById('display-9').innerText = mms;
+}
+
+document.getElementById("test-14").value = Math.round(Math.random() * 100);
+document.getElementById("test-15").value = Math.round(Math.random() * 100);
+function randomNumber() {
+    const num1 = parseInt(document.getElementById("test-14").value)
+    const num2 = parseInt(document.getElementById("test-15").value)
+    document.getElementById('display-10').innerText = num1 + num2;
+}
