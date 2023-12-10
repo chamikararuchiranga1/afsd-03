@@ -125,3 +125,20 @@ function randomNumber() {
     const num2 = parseInt(document.getElementById("test-15").value)
     document.getElementById('display-10').innerText = num1 + num2;
 }
+
+
+let rArray = [];
+for (var i=0; i<50; i++){
+    rArray.push(Math.round(Math.random() * 100))
+}
+document.getElementById('random-display').innerText = rArray;
+function randomGenarate(){
+    const num = parseInt(document.getElementById("test-16").value);
+    let result = [];
+    for(let w=0; w<rArray.length; w++){
+        if(rArray[w] % num == 0){
+            result.push(rArray[w]);
+        }
+    }
+    document.getElementById('display-11').innerText = result;
+}
